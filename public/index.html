@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAeE24GiOwuUnds7dC2lIbzVaYjaltQn30",
+        authDomain: "budget-app-manish.firebaseapp.com",
+        projectId: "budget-app-manish",
+        storageBucket: "budget-app-manish.appspot.com",
+        messagingSenderId: "1095673080152",
+        appId: "1:1095673080152:web:e32849261a2e29b182dd2d",
+        measurementId: "G-ZCDTN7X685"
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <title>Budget App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
